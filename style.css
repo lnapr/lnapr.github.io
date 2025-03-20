@@ -1,68 +1,112 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background: #F8F5F2;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #F5F2E5;
+    color: #3E3E3E;
     text-align: center;
+    line-height: 1.6;
 }
 
 header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: #FFF;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 100;
 }
 
 .logo {
-    width: 100px;
-    height: auto; 
+    max-width: 200px;  /* Adjust the logo size */
+    height: auto;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0; 
+    gap: 30px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
+    color: #3E3E3E;
+    font-weight: 700;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px; 
+    padding: 10px 20px;
 }
 
+nav ul li a:hover {
+    color: #D1C8B1;
+}
+
+/* Hero Section */
 .hero {
-    background: none; 
-    padding: 50px 20px; 
-    text-align: center; 
+    background: url('your-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFF;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 30px;
-    margin-top: 50px;
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about h2, #services h2, #clients h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
 ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
 }
 
+ul li {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+/* Footer */
 footer {
-    background: #222;
+    background-color: #222;
     color: #FFF;
     padding: 20px;
-    margin-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
 }
