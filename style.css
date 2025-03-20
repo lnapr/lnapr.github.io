@@ -16,11 +16,11 @@ header {
 }
 
 .logo {
-    width: 120px; /* Make the logo smaller by setting width */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Allow positioning in the header */
-    top: 20px; /* Distance from the top of the header */
-    left: 20px; /* Distance from the left of the header */
+    width: 50px;
+    height: auto; 
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
 }
 
 nav ul {
