@@ -10,17 +10,15 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
     padding: 20px;
     background: #FFF;
     position: relative;
 }
 
 .logo {
-    width: 50px;
-    height: auto; 
-    position: absolute; 
-    top: 20px; 
-    left: 20px; 
+    width: 50px; 
+    height: auto;
 }
 
 nav ul {
@@ -28,6 +26,7 @@ nav ul {
     display: flex;
     gap: 20px;
     padding: 0;
+    margin: 0; 
 }
 
 nav ul li {
@@ -38,11 +37,13 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding: 5px 10px; 
 }
 
 .hero {
-    background: #EAE0DA;
-    padding: 100px 20px;
+    background: none;
+    padding: 50px 20px; 
+    text-align: center; 
 }
 
 h1 {
