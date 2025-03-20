@@ -12,13 +12,13 @@ header {
     justify-content: space-between;
     padding: 20px;
     background: #FFF;
-    position: relative; /* Needed for positioning logo inside header */
+    position: relative;
 }
 
 .logo {
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute; /* This allows you to position it */
+    width: 120px; /* Make the logo smaller by setting width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Allow positioning in the header */
     top: 20px; /* Distance from the top of the header */
     left: 20px; /* Distance from the left of the header */
 }
