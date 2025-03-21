@@ -103,6 +103,29 @@ footer h2 .desktop-break {
 	font-weight: 600;
 }
 
+/* Content Sections for "Our Agency" and "Our Clients" */
+.content-section {
+	display: none; /* Hidden by default */
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #222; /* Dark background for the content */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.content-section h3 {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.content-section p {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
 	nav ul {
@@ -114,5 +137,8 @@ footer h2 .desktop-break {
 	}
 	h2 {
 		font-size: 20px;
+	}
+	.content-section {
+		padding: 15px;
 	}
 }
