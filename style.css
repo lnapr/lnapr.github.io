@@ -66,8 +66,14 @@ footer h2 {
 	margin-bottom: 20px;
 }
 
-footer h2 span {
-	display: inline; /* Keeps the text on the same line */
+footer h2 .desktop-break {
+	display: none; /* Hide the line breaks on mobile */
+}
+
+@media (min-width: 768px) {
+	footer h2 .desktop-break {
+		display: inline; /* Show the line breaks only on desktop */
+	}
 }
 
 /* Logo Container */
