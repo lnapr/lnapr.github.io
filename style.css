@@ -90,32 +90,47 @@ h2 {
   h2 {
     font-size: 20px;
   }
+/* Ensure the navigation is visible */
+nav {
+  text-align: center; /* Center the navigation */
+  background-color: black; /* Set background color to make borders visible */
+  padding: 20px 0; /* Add padding to create spacing */
 }
+
+/* Style the navigation menu */
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 20px; /* Adds spacing between buttons */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
 }
 
-nav ul a {
-  text-decoration: none;
-}
-
+/* Style the buttons */
 nav ul li {
   display: inline-block;
   padding: 10px 20px;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  color: white;
+  border-left: 2px solid white; /* White border on the left */
+  border-right: 2px solid white; /* White border on the right */
   text-transform: uppercase;
   font-family: 'Syne', sans-serif;
   font-size: 16px;
+  font-weight: 700;
   cursor: pointer;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Ensure the links inside the buttons look correct */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* Add hover effect */
 nav ul li:hover {
   border-color: #ccc; /* Optional: Change border color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
 }
+
 
