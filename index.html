@@ -33,7 +33,7 @@
 				<p>Content about your agency...</p>
 			</div>
 
-			<div id="our-clients-content" class="content-section">
+			<div id="our-clients-content" class="content-section" style="display:none;">
 				<h3>Our Clients</h3>
 				<p>Content about your clients...</p>
 			</div>
@@ -66,6 +66,10 @@
 			// Add active class to "Our Agency" and remove it from "Our Clients"
 			document.getElementById("our-agency-btn").classList.add("active");
 			document.getElementById("our-clients-btn").classList.remove("active");
+
+			// Change background color and font color for "Our Agency" content
+			document.getElementById("our-agency-content").style.backgroundColor = "#fff"; // White background
+			document.getElementById("our-agency-content").style.color = "#000"; // Black font color
 		});
 
 		// Show content for "Our Clients" and hide "Our Agency"
@@ -77,6 +81,10 @@
 			// Add active class to "Our Clients" and remove it from "Our Agency"
 			document.getElementById("our-clients-btn").classList.add("active");
 			document.getElementById("our-agency-btn").classList.remove("active");
+
+			// Reset background color and font color for "Our Clients" content
+			document.getElementById("our-clients-content").style.backgroundColor = "#222"; // Default dark background
+			document.getElementById("our-clients-content").style.color = "#fff"; // Default white font color
 		});
 	</script>
 </body>
