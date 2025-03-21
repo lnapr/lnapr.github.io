@@ -66,6 +66,10 @@ footer h2 {
 	margin-bottom: 20px;
 }
 
+footer h2 span {
+	display: inline; /* Keeps the text on the same line */
+}
+
 /* Logo Container */
 .logo-container {
 	display: flex;
