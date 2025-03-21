@@ -22,30 +22,55 @@
 		<section id="header">
 			<nav>
 				<ul>
-					<li id="our-agency"><a href="#our-agency">Our Agency</a></li>
-					<li id="our-clients"><a href="#our-clients">Our Clients</a></li>
+					<li id="our-agency-btn"><a href="#">Our Agency</a></li>
+					<li id="our-clients-btn"><a href="#">Our Clients</a></li>
 				</ul>
 			</nav>
+
+			<!-- Content Sections for "Our Agency" and "Our Clients" -->
+			<div id="our-agency-content" class="content-section" style="display:none;">
+				<h3>Our Agency</h3>
+				<p>Content about your agency...</p>
+			</div>
+
+			<div id="our-clients-content" class="content-section" style="display:none;">
+				<h3>Our Clients</h3>
+				<p>Content about your clients...</p>
+			</div>
 
 			<!-- Footer Section -->
 			<footer>
 				<h2>A collaborative PR agency <br class="desktop-break">creating the narratives <br class="desktop-break">for growing brands</h2>
 			</footer>
 
-				
-				<!-- Logo Container -->
-				<div class="logo-container">
-					<img src="lna transparant logo.png" alt="Logo" class="logo">
-				</div>
-				
-				<div class="footer-lower">
-					<a href="mailto:elena@lna-pr.com" class="contact-link">elena@lna-pr.com</a>
-					<a href="https://instagram.com/lnaprla" target="_blank" class="contact-link">@lnaprla</a>
-				</div>
-			</footer>
+			<!-- Logo Container -->
+			<div class="logo-container">
+				<img src="lna transparant logo.png" alt="Logo" class="logo">
+			</div>
+
+			<div class="footer-lower">
+				<a href="mailto:elena@lna-pr.com" class="contact-link">elena@lna-pr.com</a>
+				<a href="https://instagram.com/lnaprla" target="_blank" class="contact-link">@lnaprla</a>
+			</div>
 		</section>
 	</main>
-</body>
 
+	<!-- JavaScript to handle the button clicks -->
+	<script>
+		// Show content for "Our Agency" and hide "Our Clients"
+		document.getElementById("our-agency-btn").addEventListener("click", function(e) {
+			e.preventDefault();  // Prevent the default navigation
+			document.getElementById("our-agency-content").style.display = "block";  // Show "Our Agency" content
+			document.getElementById("our-clients-content").style.display = "none";  // Hide "Our Clients" content
+		});
+
+		// Show content for "Our Clients" and hide "Our Agency"
+		document.getElementById("our-clients-btn").addEventListener("click", function(e) {
+			e.preventDefault();  // Prevent the default navigation
+			document.getElementById("our-clients-content").style.display = "block";  // Show "Our Clients" content
+			document.getElementById("our-agency-content").style.display = "none";  // Hide "Our Agency" content
+		});
+	</script>
+</body>
 
 </html>
