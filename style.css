@@ -1,136 +1,89 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
-
-/* Reset and Global Styles */
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-}
-
+/* General Body and Navigation Styling */
 body {
-  margin: 0;
-  font-family: 'Syne', sans-serif;
-  font-weight: 400;
-  background-color: #000; /* Assuming dark background */
-  color: white;
+	margin: 0;
+	font-family: 'Syne', sans-serif;
+	font-weight: 400;
+	background-color: #000; /* Dark background */
+	color: white;
 }
 
-/* Header Section */
 #header {
-  text-align: center;
-  padding: 40px 20px;
+	text-align: center;
+	padding: 40px 20px;
 }
 
-/* Navigation Bar */
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 40px;
-  position: relative;
+nav {
+	background-color: black;
+	padding: 20px 0;
 }
 
-/* Navigation Links */
-.nav-left, .nav-right {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-between; /* Distribute the items left and right */
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-/* Centered Logo */
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 150px; /* Adjust based on your logo */
+nav ul li {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	position: relative;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px 20px;
+}
+
+nav ul li#our-agency, nav ul li#our-clients {
+	border: 2px solid white; /* Add a white border to the left and right menu items */
+}
+
+nav ul li:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-color: #ccc;
 }
 
 /* Header Text */
 h2 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-top: 20px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-top: 20px;
 }
 
 /* Contact Links */
 .header-lower {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
 }
 
 .contact-link {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-container {
-    padding: 20px;
-  }
-  
-  .nav-left, .nav-right {
-    font-size: 14px;
-  }
-
-  .logo {
-    max-width: 120px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-/* Ensure the navigation is visible */
-nav {
-  text-align: center; /* Center the navigation */
-  background-color: black; /* Set background color to make borders visible */
-  padding: 20px 0; /* Add padding to create spacing */
+	nav ul {
+		flex-direction: column; /* Stack the items vertically on smaller screens */
+		align-items: center;
+	}
+	nav ul li {
+		margin-bottom: 10px;
+	}
+	h2 {
+		font-size: 20px;
+	}
 }
-
-/* Style the navigation menu */
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 20px; /* Space between buttons */
-}
-
-/* Style the buttons */
-nav ul li {
-  display: inline-block;
-  padding: 10px 20px;
-  border-left: 2px solid white; /* White border on the left */
-  border-right: 2px solid white; /* White border on the right */
-  text-transform: uppercase;
-  font-family: 'Syne', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
-}
-
-/* Ensure the links inside the buttons look correct */
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-/* Add hover effect */
-nav ul li:hover {
-  border-color: #ccc; /* Optional: Change border color on hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-}
-
-
