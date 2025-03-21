@@ -51,16 +51,35 @@ nav ul li:hover {
 	border-color: #ccc;
 }
 
-/* Header Text */
-h2 {
+/* Footer Section */
+footer {
+	background-color: #000; /* Dark background */
+	color: white;
+	text-align: center;
+	padding: 40px 20px;
+}
+
+footer h2 {
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.4;
-	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-/* Contact Links */
-.header-lower {
+/* Logo Container */
+.logo-container {
+	display: flex;
+	justify-content: center; /* Center the logo horizontally */
+	margin: 20px 0; /* Space around the logo */
+}
+
+.logo {
+	max-width: 150px; /* Adjust logo size as needed */
+	height: auto;
+}
+
+/* Footer Links */
+.footer-lower {
 	display: flex;
 	justify-content: center;
 	gap: 20px;
