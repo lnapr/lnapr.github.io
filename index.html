@@ -56,45 +56,46 @@
 	</main>
 
 	<!-- JavaScript to handle the button clicks -->
-	<script>
-		// Show content for "Our Agency" and hide "Our Clients"
-		document.getElementById("our-agency-btn").addEventListener("click", function(e) {
-			e.preventDefault();  // Prevent the default navigation
-			document.getElementById("our-agency-content").style.display = "block";  // Show "Our Agency" content
-			document.getElementById("our-clients-content").style.display = "none";  // Hide "Our Clients" content
+<script>
+	// Show content for "Our Agency" and hide "Our Clients"
+	document.getElementById("our-agency-btn").addEventListener("click", function(e) {
+		e.preventDefault();  // Prevent the default navigation
+		document.getElementById("our-agency-content").style.display = "block";  // Show "Our Agency" content
+		document.getElementById("our-clients-content").style.display = "none";  // Hide "Our Clients" content
 
-			// Add active class to "Our Agency" and remove it from "Our Clients"
-			document.getElementById("our-agency-btn").classList.add("active");
-			document.getElementById("our-clients-btn").classList.remove("active");
+		// Add active class to "Our Agency" and remove it from "Our Clients"
+		document.getElementById("our-agency-btn").classList.add("active");
+		document.getElementById("our-clients-btn").classList.remove("active");
 
-			// Change background color and font color for "Our Agency" content
-			document.getElementById("our-agency-content").style.backgroundColor = "#fff"; // White background
-			document.getElementById("our-agency-content").style.color = "#000"; // Black font color
+		// Set the background color and text color to black for "Our Agency"
+		document.getElementById("our-agency-content").style.backgroundColor = "#000"; // Black background
+		document.getElementById("our-agency-content").style.color = "#fff"; // White font color
 
-			// Reset background color and font color for "Our Clients" content
-			document.getElementById("our-clients-content").style.backgroundColor = "#222"; // Dark background
-			document.getElementById("our-clients-content").style.color = "#fff"; // White font color
-		});
+		// Set the background color and text color to black for "Our Clients"
+		document.getElementById("our-clients-content").style.backgroundColor = "#000"; // Black background
+		document.getElementById("our-clients-content").style.color = "#fff"; // White font color
+	});
 
-		// Show content for "Our Clients" and hide "Our Agency"
-		document.getElementById("our-clients-btn").addEventListener("click", function(e) {
-			e.preventDefault();  // Prevent the default navigation
-			document.getElementById("our-clients-content").style.display = "block";  // Show "Our Clients" content
-			document.getElementById("our-agency-content").style.display = "none";  // Hide "Our Agency" content
+	// Show content for "Our Clients" and hide "Our Agency"
+	document.getElementById("our-clients-btn").addEventListener("click", function(e) {
+		e.preventDefault();  // Prevent the default navigation
+		document.getElementById("our-clients-content").style.display = "block";  // Show "Our Clients" content
+		document.getElementById("our-agency-content").style.display = "none";  // Hide "Our Agency" content
 
-			// Add active class to "Our Clients" and remove it from "Our Agency"
-			document.getElementById("our-clients-btn").classList.add("active");
-			document.getElementById("our-agency-btn").classList.remove("active");
+		// Add active class to "Our Clients" and remove it from "Our Agency"
+		document.getElementById("our-clients-btn").classList.add("active");
+		document.getElementById("our-agency-btn").classList.remove("active");
 
-			// Reset background color and font color for "Our Clients" content
-			document.getElementById("our-clients-content").style.backgroundColor = "#fff"; // White background
-			document.getElementById("our-clients-content").style.color = "#000"; // Black font color
+		// Set the background color and text color to black for "Our Clients"
+		document.getElementById("our-clients-content").style.backgroundColor = "#000"; // Black background
+		document.getElementById("our-clients-content").style.color = "#fff"; // White font color
 
-			// Reset background color and font color for "Our Agency" content
-			document.getElementById("our-agency-content").style.backgroundColor = "#222"; // Dark background
-			document.getElementById("our-agency-content").style.color = "#fff"; // White font color
-		});
-	</script>
+		// Set the background color and text color to black for "Our Agency"
+		document.getElementById("our-agency-content").style.backgroundColor = "#000"; // Black background
+		document.getElementById("our-agency-content").style.color = "#fff"; // White font color
+	});
+</script>
+
 </body>
 
 </html>
