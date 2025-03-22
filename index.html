@@ -24,7 +24,6 @@
 				<ul>
 					<li><a href="#our-agency">Our Agency</a></li>
 					<li><a href="#our-clients">Our Clients</a></li>
-
 				</ul>
 			</nav>
 
@@ -32,12 +31,12 @@
 			<section id="our-agency" class="content-section">
 				<h3>Our Agency</h3>
 				<p>Coming soon</p>
-			</div>
+			</section> <!-- Fixed incorrect closing tag -->
 
 			<section id="our-clients" class="content-section">
 				<h3>Our Clients</h3>
 				<p>Coming soon...</p>
-			</div>
+			</section> <!-- Fixed incorrect closing tag -->
 
 			<!-- Footer Section -->
 			<footer>
@@ -56,51 +55,13 @@
 		</section>
 	</main>
 
-	<!-- JavaScript to handle the button clicks -->
-<script>
-	// Show content for "Our Agency" and hide "Our Clients"
-	document.getElementById("our-agency-btn").addEventListener("click", function(e) {
-		e.preventDefault();  // Prevent the default navigation
-		document.getElementById("our-agency-content").style.display = "block";  // Show "Our Agency" content
-		document.getElementById("our-clients-content").style.display = "none";  // Hide "Our Clients" content
+	<!-- Removed Unnecessary JavaScript -->
 
-		// Add active class to "Our Agency" and remove it from "Our Clients"
-		document.getElementById("our-agency-btn").classList.add("active");
-		document.getElementById("our-clients-btn").classList.remove("active");
-
-		// Set the background color and text color to black for "Our Agency"
-		document.getElementById("our-agency-content").style.backgroundColor = "#000"; // Black background
-		document.getElementById("our-agency-content").style.color = "#fff"; // White font color
-
-		// Set the background color and text color to black for "Our Clients"
-		document.getElementById("our-clients-content").style.backgroundColor = "#000"; // Black background
-		document.getElementById("our-clients-content").style.color = "#fff"; // White font color
-	});
-
-	// Show content for "Our Clients" and hide "Our Agency"
-	document.getElementById("our-clients-btn").addEventListener("click", function(e) {
-		e.preventDefault();  // Prevent the default navigation
-		document.getElementById("our-clients-content").style.display = "block";  // Show "Our Clients" content
-		document.getElementById("our-agency-content").style.display = "none";  // Hide "Our Agency" content
-
-		// Add active class to "Our Clients" and remove it from "Our Agency"
-		document.getElementById("our-clients-btn").classList.add("active");
-		document.getElementById("our-agency-btn").classList.remove("active");
-
-		// Set the background color and text color to black for "Our Clients"
-		document.getElementById("our-clients-content").style.backgroundColor = "#000"; // Black background
-		document.getElementById("our-clients-content").style.color = "#fff"; // White font color
-
-		// Set the background color and text color to black for "Our Agency"
-		document.getElementById("our-agency-content").style.backgroundColor = "#000"; // Black background
-		document.getElementById("our-agency-content").style.color = "#fff"; // White font color
-	});
-</script>
+	<!-- Footer with Copyright -->
+	<footer class="site-footer">
+		<p>© 2025 LNA PR | LOS ANGELES - NEW YORK</p>
+	</footer>
 
 </body>
-	<footer class="site-footer">
-  <p>© 2025 LNA PR | LOS ANGELES - NEW YORK</p>
-</footer>
-
 
 </html>
