@@ -169,3 +169,15 @@ nav ul li.active a {
 		padding: 15px;
 	}
 }
+/* Footer at the bottom of the page */
+.site-footer {
+  background-color: #000; /* Matches the site's dark background */
+  color: white;           /* White text color */
+  text-align: center;     /* Centered text */
+  padding: 20px 0;        /* Vertical padding for spacing */
+  font-size: 14px;        /* Smaller font size for the footer text */
+  width: 100%;            /* Ensures the footer spans the full width */
+  position: relative;     /* Keeps it at the bottom of content */
+  bottom: 0;              /* Aligns the footer to the bottom */
+}
+
