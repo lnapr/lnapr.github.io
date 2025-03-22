@@ -118,7 +118,7 @@ footer h2 .desktop-break {
 	display: none; /* Hidden by default */
 	padding: 20px;
 	margin-top: 20px;
-	background-color: #222; /* Dark background for the content (default) */
+	background-color: #000; /* Set to black background */
 	color: white; /* Text color */
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,8 +139,8 @@ footer h2 .desktop-break {
 
 /* Active Content Section - when shown */
 .active-content {
-	background-color: #fff; /* White background when active */
-	color: black; /* Black text when active */
+	background-color: #000; /* Keep black background */
+	color: white; /* Keep white text */
 }
 
 /* Active Navigation Link Styling */
