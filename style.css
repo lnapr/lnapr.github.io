@@ -3,8 +3,8 @@ body {
     margin: 0;
     font-family: 'Syne', sans-serif;
     font-weight: 400;
-    background-color: #000;
-    color: white;
+    background-color: #fff;
+    color: black;
     text-align: center;
 }
 
@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background-color: black;
+    background-color: white;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -36,9 +36,9 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 2px solid black;
     display: block;
 }
 
