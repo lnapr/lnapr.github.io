@@ -1,21 +1,13 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct line height in all browsers.
- * 2. Prevent font-size adjustments after orientation changes in iOS.
- * 3. Set the default font family to "Syne".
- */
-
+/* Document Defaults */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  font-family: 'Syne', sans-serif; /* 3 */
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Syne', sans-serif;
 }
 
-/* Reset margin and set default font */
+/* Reset margin and default font */
 body {
   margin: 0;
   font-family: 'Syne', sans-serif;
@@ -30,27 +22,10 @@ main {
 }
 
 /* Headings */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-  font-weight: 700;
-}
-
-h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: 'Syne', sans-serif;
-}
-
-/* Horizontal rule */
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-/* Preformatted text */
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 /* Links */
@@ -60,36 +35,12 @@ a {
   color: inherit;
 }
 
-/* Bold and strong */
-b, strong {
-  font-weight: bolder;
-}
-
-/* Code elements */
-code, kbd, samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-/* Small text */
-small {
-  font-size: 80%;
-}
-
-/* Superscript and subscript */
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
+/* Buttons */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
 
 /* Images */
@@ -99,121 +50,20 @@ img {
   height: auto;
 }
 
-/* Buttons and Inputs */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
+/* List Reset */
+ul {
+  padding: 0;
   margin: 0;
+  list-style: none;
 }
 
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-/* Button styles for consistency */
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-
-button:focus,
-[type="button"]:focus,
-[type="reset"]:focus,
-[type="submit"]:focus {
-  outline: 2px solid white;
-}
-
-/* Remove inner border and padding for buttons in Firefox */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* Fieldset */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/* Legend */
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-/* Progress bar */
-progress {
-  vertical-align: baseline;
-}
-
-/* Textarea */
-textarea {
-  overflow: auto;
-}
-
-/* Checkbox and radio inputs */
-[type="checkbox"],
-[type="radio"] {
+/* Alignment Fixes */
+[type="checkbox"], [type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* Number input adjustments */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/* Search input */
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* File upload button */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-/* Details and Summary */
-details {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-/* Hidden elements */
-template {
-  display: none;
-}
-
+/* Hidden Elements */
 [hidden] {
   display: none;
 }
