@@ -1,82 +1,74 @@
-/* General Body and Navigation Styling */
+/* General Styling */
 body {
     margin: 0;
     font-family: 'Syne', sans-serif;
     font-weight: 400;
-    background-color: #000; /* Dark background */
+    background-color: #000;
     color: white;
+    text-align: center;
 }
 
-#header {
-    text-align: center;
-    padding: 40px 20px;
+/* Header & Navigation */
+header {
+    padding: 20px;
 }
 
 nav {
     background-color: black;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 20px;
 }
 
 nav ul li {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
-    cursor: pointer;
-    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
     display: block;
-    padding: 10px 20px;
-}
-
-nav ul li#our-agency-btn, 
-nav ul li#our-clients-btn {
-    border: 2px solid white; /* White border */
-    padding: 10px 20px;
-}
-
-/* Active Navigation Link Styling */
-nav ul li.active {
-    background-color: #fff;
-    color: black;
-}
-
-nav ul li.active a {
-    color: black;
 }
 
 /* Tagline Section */
 .tagline {
-    text-align: center;
     font-size: 24px;
     font-weight: 700;
     padding: 40px 20px;
-    border: 2px solid white; /* White border around tagline */
-    display: inline-block;
-    margin: 20px auto;
+    border: 2px solid white;
+    width: fit-content;
+    margin: 40px auto;
 }
 
-/* Content Sections */
+/* Main Content Sections */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .content-section {
     padding: 40px;
     margin: 40px auto;
-    background-color: black; /* Keeps background black */
+    background-color: black;
     color: white;
     border-radius: 8px;
-    max-width: 1200px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
 }
 
 /* Footer */
