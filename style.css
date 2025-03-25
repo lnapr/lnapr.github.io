@@ -50,82 +50,84 @@ nav ul li a {
     padding: 10px 20px;
 }
 
-/* Logo Styling */
-/* Logo Container */
-.logo-container {
-    max-width: 210px; /* Adjust logo size as needed */
-    margin: 40px auto; /* Centers logo */
+/* Flexbox container for logo and tagline */
+.logo-and-tagline {
+    display: flex;
+    flex-direction: column; /* Stack logo and tagline vertically */
+    justify-content: center; /* Center items vertically within the container */
+    align-items: center; /* Center items horizontally */
+    min-height: 80vh; /* Adjust as needed to ensure space above and below */
+    margin-top: 20px; /* Control the space from the top */
 }
 
 /* Logo Styling */
-.logo {
-    width: 300px; /* Set logo width */
-    height: auto;
+.logo-container {
+    max-width: 210px; /* Set the container's maximum width */
+    margin: 0; /* Remove extra space above the logo */
+}
+
+.logo { 
+    width: 300px; /* Set the logo's width */
+    height: auto; /* Maintain the aspect ratio */
     display: block;
     margin: 0 auto;
 }
 
-/* Tagline Section */
+/* Tagline Styling */
 .tagline {
     text-align: center;
-    font-size: 24px; /* Desired font size */
+    font-size: 24px;
     font-weight: 700;
-    padding: 10px 20px; /* Padding inside tagline section */
+    padding: 20px 20px;
     width: fit-content;
-    margin: 40px auto; /* Space between tagline and surrounding sections */
-    max-width: 90%; /* Prevents tagline from stretching too wide on large screens */
+    margin: 20px 0; /* Adjust the margin to control space between the tagline and surrounding sections */
 }
 
 /* Make the tagline responsive */
 @media (max-width: 1024px) {
     .tagline {
-        font-size: 20px; /* Smaller size for tablets */
+        font-size: 20px; /* Adjust font size for tablets */
     }
 }
 
 @media (max-width: 768px) {
     .tagline {
-        font-size: 18px; /* Smaller size for small tablets and large phones */
+        font-size: 18px; /* Adjust font size for small tablets and large phones */
     }
 }
 
 @media (max-width: 480px) {
     .tagline {
-        font-size: 16px; /* Smaller size for phones */
+        font-size: 16px; /* Adjust font size for mobile phones */
     }
 }
 
-/* Content Section */
-.content-section {
-    text-align: center;
-    padding: 40px;
-    margin: 40px auto;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    max-width: 1200px;
+/* Our Offering Section */
+h3 {
+    font-size: 2em;
+    margin-top: 40px;
 }
 
-/* Offering List - Properly Centered */
 .offering-list {
     list-style: none;
     padding: 0;
     margin: 0 auto;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack items in a column */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the list items */
+    max-width: 1200px;
 }
 
 .offering-list li {
     font-size: 18px;
-    margin: 5px 0; /* Reduce margin for a compact list */
+    margin: 10px 0; /* Adjust space between list items */
 }
 
 /* Footer */
 .site-footer {
     text-align: center;
-    padding: 40px 20px; /* More padding to create space */
+    padding: 20px;
     background-color: white;
     color: black;
     font-size: 14px;
