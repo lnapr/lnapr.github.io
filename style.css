@@ -80,7 +80,7 @@ nav ul li a {
     font-weight: 700;
     padding: 20px 20px;
     width: fit-content;
-    margin: 20px 0; /* Adjust the margin to control space between the tagline and surrounding sections */
+    margin: 5px 0; /* Adjust the margin to control space between the tagline and surrounding sections */
 }
 
 /* Make the tagline responsive */
