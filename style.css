@@ -1,11 +1,30 @@
-/* General Body and Navigation Styling */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Reset margin and set default font */
 body {
-    margin: 0;
-    font-family: 'Syne', sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-    color: black;
-    text-align: center; /* Centers all text */
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: black;
+  text-align: center; /* Centers all text */
+}
+
+/* Sections */
+main {
+  display: block;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: 'Syne', sans-serif;
+}
+
+/* Images */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navigation */
@@ -33,14 +52,13 @@ nav ul li a {
 
 /* Logo Styling */
 .logo-container {
-    text-align: center;
-    margin-top: 40px;
+    max-width: 150px; /* Constrains the logo container */
+    margin: 40px auto; /* Centers it */
 }
 
-.logo {
-    width: 75px !important; /* Forces the width */
-    height: auto !important; /* Maintains aspect ratio */
-    max-width: 100% !important; /* Ensures it doesn't exceed its container */
+.logo { 
+    width: 75px; /* Fixes the width */
+    height: auto; /* Maintains aspect ratio */
     display: block;
     margin: 0 auto;
 }
