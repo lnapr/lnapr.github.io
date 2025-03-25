@@ -62,18 +62,20 @@ nav ul li a {
     max-width: 1200px;
 }
 
-/* Offering List */
+/* Offering List - Centering it properly */
 .offering-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: inline-block;
-    text-align: left; /* Align items to the left inside the list */
+    display: flex; /* Using flexbox to center the list */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    justify-content: center; /* Centers items horizontally */
+    text-align: center; /* Ensures text inside each list item is centered */
 }
 
 .offering-list li {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 20px; /* Add some space between items */
 }
 
 /* Footer */
