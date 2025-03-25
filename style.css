@@ -57,7 +57,7 @@ nav ul li a {
 }
 
 .logo { 
-    width: 75px; /* Fixes the width */
+    max-width: 100%; /* Ensures the logo scales responsively */
     height: auto; /* Maintains aspect ratio */
     display: block;
     margin: 0 auto;
