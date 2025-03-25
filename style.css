@@ -51,14 +51,16 @@ nav ul li a {
 }
 
 /* Logo Styling */
+/* Logo Container */
 .logo-container {
-    max-width: 350px; /* Adjust the container to accommodate the logo size */
-    margin: 40px auto; /* Centers the container */
+    max-width: 210px; /* Adjust logo size as needed */
+    margin: 40px auto; /* Centers logo */
 }
 
-.logo { 
-    width: 100%; /* Set width to 100% of the container */
-    height: auto; /* Maintains the aspect ratio */
+/* Logo Styling */
+.logo {
+    width: 300px; /* Set logo width */
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -66,12 +68,12 @@ nav ul li a {
 /* Tagline Section */
 .tagline {
     text-align: center;
-    font-size: 24px; /* Maintain the font size */
+    font-size: 24px; /* Desired font size */
     font-weight: 700;
-    padding: 10px 20px; /* Reduce padding to avoid increasing font size */
+    padding: 10px 20px; /* Padding inside tagline section */
     width: fit-content;
-    margin: 10px auto; /* Reduced margin for spacing between logo and tagline */
-    margin-top: -20px; /* Move the tagline upwards */
+    margin: 40px auto; /* Space between tagline and surrounding sections */
+    max-width: 90%; /* Prevents tagline from stretching too wide on large screens */
 }
 
 /* Make the tagline responsive */
@@ -93,8 +95,7 @@ nav ul li a {
     }
 }
 
-
-/* Content Sections */
+/* Content Section */
 .content-section {
     text-align: center;
     padding: 40px;
@@ -103,7 +104,6 @@ nav ul li a {
     color: black;
     border-radius: 8px;
     max-width: 1200px;
-    margin-bottom: 120px; /* More space between sections */
 }
 
 /* Offering List - Properly Centered */
