@@ -23,6 +23,7 @@ body {
 /* Sections */
 main {
   display: block;
+  text-align: center; /* Ensures content inside <main> is centered */
 }
 
 /* Headings */
@@ -35,6 +36,8 @@ img {
     border-style: none;
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto; /* Ensures images are centered */
 }
 
 /* Logo Styling */
@@ -56,7 +59,7 @@ img {
     font-weight: 700;
     padding: var(--spacing-large) var(--spacing-small);
     margin: var(--spacing-medium) auto;
-    text-align: center;
+    text-align: center; /* Ensures text in tagline is centered */
 }
 
 /* Make the tagline responsive */
