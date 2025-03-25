@@ -3,13 +3,14 @@ body {
     margin: 0;
     font-family: 'Syne', sans-serif;
     font-weight: 400;
-    background-color: #fff; /* White background */
-    color: black; /* Black text */
+    background-color: #fff;
+    color: black;
+    text-align: center; /* Centers all text */
 }
 
 /* Navigation */
 nav {
-    background-color: white; /* White background */
+    background-color: white;
     padding: 20px 0;
 }
 
@@ -53,7 +54,7 @@ nav ul li a {
 
 /* Content Sections */
 .content-section {
-    text-align: center; /* Centers content in the section */
+    text-align: center;
     padding: 40px;
     margin: 40px auto;
     background-color: white;
@@ -62,20 +63,20 @@ nav ul li a {
     max-width: 1200px;
 }
 
-/* Offering List - Centering it properly */
+/* Offering List - Properly Centered */
 .offering-list {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex; /* Using flexbox to center the list */
-    flex-wrap: wrap; /* Allow items to wrap if needed */
-    justify-content: center; /* Centers items horizontally */
-    text-align: center; /* Ensures text inside each list item is centered */
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center items horizontally */
 }
 
 .offering-list li {
     font-size: 18px;
-    margin: 10px 20px; /* Add some space between items */
+    margin: 5px 0; /* Reduce margin for a compact list */
 }
 
 /* Footer */
