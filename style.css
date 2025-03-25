@@ -52,12 +52,12 @@ nav ul li a {
 
 /* Logo Styling */
 .logo-container {
-    max-width: 210px; /* Set the container's maximum width to 210px */
+    max-width: 300px; /* Adjust the container to accommodate the logo size */
     margin: 40px auto; /* Centers the container */
 }
 
 .logo { 
-    width: 300px; /* Set the logo's width to 300px */
+    width: 100%; /* Set width to 100% of the container */
     height: auto; /* Maintains the aspect ratio */
     display: block;
     margin: 0 auto;
@@ -101,7 +101,7 @@ nav ul li a {
     color: black;
     border-radius: 8px;
     max-width: 1200px;
-    margin-bottom: 120px; /* Add more space here */
+    margin-bottom: 120px; /* More space between sections */
 }
 
 /* Offering List - Properly Centered */
@@ -111,4 +111,21 @@ nav ul li a {
     margin: 0 auto;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack items in a*
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.offering-list li {
+    font-size: 18px;
+    margin: 5px 0; /* Reduce margin for a compact list */
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 40px 20px; /* More padding to create space */
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    margin-top: 40px;
+}
