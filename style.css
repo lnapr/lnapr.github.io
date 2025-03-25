@@ -66,12 +66,12 @@ nav ul li a {
 /* Tagline Section */
 .tagline {
     text-align: center;
-    font-size: 24px;
+    font-size: 24px; /* Maintain the font size */
     font-weight: 700;
-    padding: 40px 20px;
+    padding: 10px 20px; /* Reduce padding to avoid increasing font size */
     width: fit-content;
     margin: 10px auto; /* Reduced margin for spacing between logo and tagline */
-    margin-top: -50px; /* Move the tagline upwards */
+    margin-top: -20px; /* Move the tagline upwards */
 }
 
 /* Make the tagline responsive */
@@ -92,6 +92,7 @@ nav ul li a {
         font-size: 16px; /* Smaller size for phones */
     }
 }
+
 
 /* Content Sections */
 .content-section {
