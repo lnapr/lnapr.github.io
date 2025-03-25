@@ -52,7 +52,7 @@ nav ul li a {
 
 /* Logo Styling */
 .logo-container {
-    max-width: 150px; /* Constrains the logo container */
+    max-width: 85px; /* Constrains the logo container */
     margin: 40px auto; /* Centers it */
 }
 
