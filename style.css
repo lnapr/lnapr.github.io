@@ -1,78 +1,12 @@
-/* General Body and Navigation Styling */
-body {
-    margin: 0;
-    font-family: 'Syne', sans-serif;
-    font-weight: 400;
-    background-color: #fff; /* White background */
-    color: black; /* Black text */
-}
-
-/* Navigation */
-nav {
-    background-color: white; /* White background */
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav ul {
+.offering-list {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    padding: 10px 20px;
-}
-
-/* Logo Styling */
-.logo-container {
     text-align: center;
-    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
 }
 
-.logo {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-}
-
-/* Tagline Section */
-.tagline {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 40px 20px;
-    margin: 20px auto;
-}
-
-/* Content Sections */
-.content-section {
-    padding: 40px;
-    margin: 40px auto;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    max-width: 1200px;
-    text-align: center;
-}
-
-/* Footer */
-.site-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    font-size: 14px;
-    margin-top: 40px;
-}
-
-/* Remove Unwanted Banner */
-body > div:first-child {
-    display: none; /* Hides any unexpected black banner */
+.offering-list li {
+    margin-bottom: 5px;
 }
