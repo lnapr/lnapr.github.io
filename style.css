@@ -38,8 +38,11 @@ nav ul li a {
 }
 
 .logo {
-    width: 85px; /* Adjusted size */
-    height: auto;
+    width: 120px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent it from exceeding container size */
+    display: block; /* Ensure no extra space below */
+    margin: 0 auto; /* Center the logo */
 }
 
 /* Tagline Section */
