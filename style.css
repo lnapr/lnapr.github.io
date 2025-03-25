@@ -101,6 +101,7 @@ nav ul li a {
     color: black;
     border-radius: 8px;
     max-width: 1200px;
+    margin-bottom: 120px; /* Add more space here */
 }
 
 /* Offering List - Properly Centered */
