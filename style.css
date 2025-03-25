@@ -55,7 +55,7 @@ img {
 
 /* Tagline Section */
 .tagline {
-    font-size: 15px(--font-size-tagline);
+    font-size: 20px(--font-size-tagline);
     font-weight: 700;
     padding: var(--spacing-small) var(--spacing-small); /* Reduce padding */
     margin-top: 10px; /* Reduce the top margin to move it up */
