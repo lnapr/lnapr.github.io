@@ -73,6 +73,25 @@ nav ul li a {
     margin: 20px auto;
 }
 
+/* Make the tagline responsive */
+@media (max-width: 1024px) {
+    .tagline {
+        font-size: 20px; /* Smaller size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .tagline {
+        font-size: 18px; /* Smaller size for small tablets and large phones */
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        font-size: 16px; /* Smaller size for phones */
+    }
+}
+
 /* Content Sections */
 .content-section {
     text-align: center;
@@ -91,21 +110,4 @@ nav ul li a {
     margin: 0 auto;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Stack items in a column */
-    align-items: center; /* Center items horizontally */
-}
-
-.offering-list li {
-    font-size: 18px;
-    margin: 5px 0; /* Reduce margin for a compact list */
-}
-
-/* Footer */
-.site-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    font-size: 14px;
-    margin-top: 40px;
-}
+    flex-direction: column; /* Stack items in a*
