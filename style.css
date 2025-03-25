@@ -58,7 +58,7 @@ img {
     font-size: var(--font-size-tagline);
     font-weight: 700;
     padding: var(--spacing-small) var(--spacing-small); /* Reduce padding */
-    margin-top: 10px; /* Reduce the top margin to move it up */
+    margin-top: 0px; /* Reduce the top margin to move it up */
     margin-bottom: var(--spacing-medium); /* Add space below the tagline */
     text-align: center; /* Ensures text in tagline is centered */
 }
