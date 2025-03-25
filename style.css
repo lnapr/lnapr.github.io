@@ -27,111 +27,94 @@ img {
   height: auto;
 }
 
-/* Navigation */
-nav {
-    background-color: white;
-    padding: 20px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 10px 20px;
-}
-
-/* Flexbox container for logo and tagline */
-.logo-and-tagline {
-    display: flex;
-    flex-direction: column; /* Stack logo and tagline vertically */
-    justify-content: center; /* Center items vertically within the container */
-    align-items: center; /* Center items horizontally */
-    min-height: 80vh; /* Adjust as needed to ensure space above and below */
-    margin-top: 20px; /* Control the space from the top */
-}
-
 /* Logo Styling */
 .logo-container {
-    max-width: 210px; /* Set the container's maximum width */
-    margin: 0; /* Remove extra space above the logo */
+  max-width: 210px; /* Set the container's maximum width to 210px */
+  margin: 40px auto; /* Centers the container */
 }
 
 .logo { 
-    width: 300px; /* Set the logo's width */
-    height: auto; /* Maintain the aspect ratio */
-    display: block;
-    margin: 0 auto;
+  width: 300px; /* Set the logo's width to 300px */
+  height: auto; /* Maintains the aspect ratio */
+  display: block;
+  margin: 0 auto;
 }
 
-/* Tagline Styling */
+/* Tagline Section */
 .tagline {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 20px 20px;
-    width: fit-content;
-    margin: 5px 0; /* Adjust the margin to control space between the tagline and surrounding sections */
-}
-
-/* Make the tagline responsive */
-@media (max-width: 1024px) {
-    .tagline {
-        font-size: 20px; /* Adjust font size for tablets */
-    }
-}
-
-@media (max-width: 768px) {
-    .tagline {
-        font-size: 18px; /* Adjust font size for small tablets and large phones */
-    }
-}
-
-@media (max-width: 480px) {
-    .tagline {
-        font-size: 16px; /* Adjust font size for mobile phones */
-    }
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 20px; /* Reduced padding */
+  margin-top: 10px; /* Reduced margin-top to move it up */
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* Our Offering Section */
 h3 {
-    font-size: 22px; /* Set a consistent font size */
-    margin-top: 20px; /* Adjust margin-top to control spacing from the tagline */
-    font-weight: 700; /* Ensure the weight is consistent */
-    text-align: center; /* Ensure it's centered */
+  font-size: 22px; /* Set a consistent font size for "Our Offering" */
+  font-weight: 700;
+  margin-top: 20px; /* Adjust margin-top to control spacing from the tagline */
+  text-align: center; /* Ensure "Our Offering" is centered */
 }
 
+/* Offering List - Properly Centered */
 .offering-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center the list items */
-    max-width: 1200px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack items in a column */
+  align-items: center; /* Center items horizontally */
 }
 
 .offering-list li {
-    font-size: 18px;
-    margin: 10px 0; /* Adjust space between list items */
+  font-size: 18px;
+  margin: 5px 0; /* Reduced margin for a compact list */
 }
 
 /* Footer */
 .site-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    font-size: 14px;
-    margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  margin-top: 40px; /* Space between offering section and footer */
+}
+
+/* Make the tagline responsive */
+@media (max-width: 1024px) {
+  .tagline {
+    font-size: 20px; /* Smaller size for tablets */
+    margin-top: 10px; /* Keep the reduced margin */
+  }
+
+  h3 {
+    font-size: 20px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .tagline {
+    font-size: 18px; /* Smaller size for small tablets and large phones */
+    margin-top: 8px; /* Reduce margin more on smaller screens */
+  }
+
+  h3 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 16px; /* Smaller size for phones */
+    margin-top: 5px; /* Reduce margin further for mobile */
+  }
+
+  h3 {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
 }
