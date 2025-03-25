@@ -55,7 +55,8 @@ img {
 h3 {
   font-size: 22px; /* Set a consistent font size for "Our Offering" */
   font-weight: 700;
-  margin-top: 20px; /* Adjust margin-top to control spacing from the tagline */
+  margin-top: 40px; /* Adjust margin-top to control spacing from the tagline */
+  margin-bottom: 20px; /* Add margin-bottom to create more space between the heading and the list */
   text-align: center; /* Ensure "Our Offering" is centered */
 }
 
@@ -74,6 +75,12 @@ h3 {
   font-size: 18px;
   margin: 5px 0; /* Reduced margin for a compact list */
 }
+
+/* Add extra space before the first item in the offering list */
+.offering-list li:first-child {
+  margin-top: 20px; /* Add more space before the first list item */
+}
+
 
 /* Footer */
 .site-footer {
