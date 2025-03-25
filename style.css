@@ -52,12 +52,12 @@ nav ul li a {
 
 /* Logo Styling */
 .logo-container {
-    max-width: 180px; /* Set the container's maximum width to 150px */
+    max-width: 210px; /* Set the container's maximum width to 210px */
     margin: 40px auto; /* Centers the container */
 }
 
 .logo { 
-    width: 180px; /* Set the logo's width to 150px */
+    width: 210px; /* Set the logo's width to 210px */
     height: auto; /* Maintains the aspect ratio */
     display: block;
     margin: 0 auto;
