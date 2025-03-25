@@ -52,7 +52,7 @@ nav ul li a {
 
 /* Logo Styling */
 .logo-container {
-    max-width: 300px; /* Adjust the container to accommodate the logo size */
+    max-width: 350px; /* Adjust the container to accommodate the logo size */
     margin: 40px auto; /* Centers the container */
 }
 
@@ -66,11 +66,11 @@ nav ul li a {
 /* Tagline Section */
 .tagline {
     text-align: center;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 700;
     padding: 40px 20px;
     width: fit-content;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 /* Make the tagline responsive */
