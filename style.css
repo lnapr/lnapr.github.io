@@ -104,8 +104,10 @@ nav ul li a {
 
 /* Our Offering Section */
 h3 {
-    font-size: 2em;
-    margin-top: 40px;
+    font-size: 22px; /* Set a consistent font size */
+    margin-top: 20px; /* Adjust margin-top to control spacing from the tagline */
+    font-weight: 700; /* Ensure the weight is consistent */
+    text-align: center; /* Ensure it's centered */
 }
 
 .offering-list {
