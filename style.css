@@ -17,7 +17,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 .logo {
-    width: 85px; /* Adjust size as needed */
+    width: 120px; /* Adjusted size */
     height: auto;
 }
 
@@ -53,6 +53,7 @@ nav ul li a {
 
 /* Content Sections */
 .content-section {
+    text-align: center; /* Centers content in the section */
     padding: 40px;
     margin: 40px auto;
     background-color: white;
@@ -61,18 +62,18 @@ nav ul li a {
     max-width: 1200px;
 }
 
-/* Offering List Styling */
+/* Offering List */
 .offering-list {
-    list-style: none; /* Removes bullet points */
+    list-style: none;
     padding: 0;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.8;
-    font-weight: 500;
+    margin: 0;
+    display: inline-block;
+    text-align: left; /* Align items to the left inside the list */
 }
 
 .offering-list li {
-    margin-bottom: 5px;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 /* Footer */
@@ -83,9 +84,4 @@ nav ul li a {
     color: black;
     font-size: 14px;
     margin-top: 40px;
-}
-
-/* Remove Unwanted Banner */
-body > div:first-child {
-    display: none; /* Hides any unexpected black banner */
 }
