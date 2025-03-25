@@ -1,13 +1,23 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Define CSS Variables for Consistency */
+:root {
+    --font-size-base: 16px; /* Base font size */
+    --font-size-heading: 22px; /* Heading font size */
+    --font-size-tagline: 24px; /* Tagline font size */
+    --font-size-offering: 18px; /* Offering list font size */
+    
+    --spacing-small: 10px; /* Small spacing */
+    --spacing-medium: 20px; /* Medium spacing */
+    --spacing-large: 40px; /* Large spacing */
+}
 
-/* Reset margin and set default font */
+/* Global Styling */
 body {
-  margin: 0;
-  font-family: 'Syne', sans-serif;
-  font-weight: 400;
-  background-color: #fff;
-  color: black;
-  text-align: center; /* Centers all text */
+    margin: 0;
+    font-family: 'Syne', sans-serif;
+    font-size: var(--font-size-base);
+    background-color: #fff;
+    color: black;
+    text-align: center; /* Centers all text */
 }
 
 /* Sections */
@@ -17,111 +27,98 @@ main {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6, p, a, li {
-  font-family: 'Syne', sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 
 /* Images */
 img {
-  border-style: none;
-  max-width: 100%;
-  height: auto;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Logo Styling */
 .logo-container {
-  max-width: 210px; /* Set the container's maximum width to 210px */
-  margin: 40px auto; /* Centers the container */
+    max-width: 210px; /* Set the container's maximum width */
+    margin: var(--spacing-large) auto; /* Centers the container */
 }
 
 .logo { 
-  width: 300px; /* Set the logo's width to 300px */
-  height: auto; /* Maintains the aspect ratio */
-  display: block;
-  margin: 0 auto;
+    width: 300px; /* Set the logo's width */
+    height: auto; /* Maintains the aspect ratio */
+    display: block;
+    margin: 0 auto;
 }
 
 /* Tagline Section */
 .tagline {
-  text-align: center;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 20px 20px; /* Reduced padding */
-  margin-top: 10px; /* Reduced margin-top to move it up */
-  width: fit-content;
-  margin: 0 auto;
-}
-
-/* Our Offering Section */
-h3 {
-  font-size: 22px; /* Set a consistent font size for "Our Offering" */
-  font-weight: 700;
-  margin-top: 40px; /* Adjust margin-top to control spacing from the tagline */
-  margin-bottom: 20px; /* Add margin-bottom to create more space between the heading and the list */
-  text-align: center; /* Ensure "Our Offering" is centered */
-}
-
-/* Offering List - Properly Centered */
-.offering-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column; /* Stack items in a column */
-  align-items: center; /* Center items horizontally */
-}
-
-.offering-list li {
-  font-size: 18px;
-  margin: 5px 0; /* Reduced margin for a compact list */
-}
-
-/* Add extra space before the first item in the offering list */
-.offering-list li:first-child {
-  margin-top: 20px; /* Add more space before the first list item */
-}
-
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  color: black;
-  font-size: 14px;
-  margin-top: 40px; /* Space between offering section and footer */
+    font-size: var(--font-size-tagline);
+    font-weight: 700;
+    padding: var(--spacing-large) var(--spacing-small);
+    margin: var(--spacing-medium) auto;
+    text-align: center;
 }
 
 /* Make the tagline responsive */
 @media (max-width: 1024px) {
-  .tagline {
-    font-size: 20px; /* Smaller size for tablets */
-    margin-top: 10px; /* Keep the reduced margin */
-  }
-
-  h3 {
-    font-size: 20px; /* Adjust font size for tablets */
-  }
+    .tagline {
+        font-size: 20px; /* Smaller size for tablets */
+    }
 }
 
 @media (max-width: 768px) {
-  .tagline {
-    font-size: 18px; /* Smaller size for small tablets and large phones */
-    margin-top: 8px; /* Reduce margin more on smaller screens */
-  }
-
-  h3 {
-    font-size: 18px; /* Adjust font size for smaller screens */
-  }
+    .tagline {
+        font-size: 18px; /* Smaller size for small tablets and large phones */
+    }
 }
 
 @media (max-width: 480px) {
-  .tagline {
-    font-size: 16px; /* Smaller size for phones */
-    margin-top: 5px; /* Reduce margin further for mobile */
-  }
+    .tagline {
+        font-size: 16px; /* Smaller size for phones */
+    }
+}
 
-  h3 {
-    font-size: 16px; /* Adjust font size for mobile */
-  }
+/* Content Sections */
+.content-section {
+    text-align: center;
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) auto;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin-bottom: var(--spacing-large); /* Add space between sections */
+}
+
+/* Offering List */
+.offering-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.offering-list li {
+    font-size: var(--font-size-offering);
+    margin: var(--spacing-small) 0; /* Spacing between list items */
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: var(--spacing-small);
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    margin-top: var(--spacing-large); /* More space between offerings and footer */
+}
+
+/* Make Footer Responsive */
+@media (max-width: 768px) {
+    .site-footer {
+        font-size: 12px;
+    }
 }
