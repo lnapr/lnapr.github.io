@@ -13,13 +13,15 @@ body {
 /* Header */
 .header-container {
   display: flex;
-  justify-content: space-between; /* Change this to 'center' */
+  justify-content: space-between; /* Keeps logo on left and menu to the right */
   padding: 20px 30px;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: #FAF8F6;
   z-index: 1000;
+  align-items: center;
 }
 
 .logo img {
@@ -29,15 +31,15 @@ body {
 
 .site-nav {
   display: flex;
-  gap: 20px; /* Reduced gap for menu options */
-  justify-content: center; /* Center the menu options */
-  align-items: center; /* Vertically align the menu options */
-  flex-grow: 1; /* Make sure the nav takes up all the available space */
+  gap: 20px;
+  justify-content: flex-start; /* Align menu options to the left, closer to center */
+  align-items: center;
+  flex-grow: 1;
 }
 
 .site-nav a {
   color: #191919;
-  font-weight: normal; /* Removed bold */
+  font-weight: normal;
   text-decoration: none;
   font-size: 14px;
 }
@@ -50,7 +52,7 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px; /* To avoid content being hidden by fixed header */
+  margin-top: 120px; /* Adjusted margin to avoid content overlapping with fixed header */
   padding: 20px;
 }
 
