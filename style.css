@@ -1,57 +1,95 @@
-/* Import font */
+/* General Styling */
 body {
-    font-family: 'Playfair Display', serif;
+    background-color: #FAF8F6;
+    color: #191919;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #000;
 }
 
-/* Header styling */
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    border-bottom: 1px solid #ddd;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    background-color: #FAF8F6;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-/* Logo styling */
-.logo a {
+.logo {
     font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
 }
 
-/* Navigation menu */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    position: absolute;
+    right: 50px;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-    color: black;
+    color: #191919;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-/* Content styling */
+nav ul li a:hover {
+    color: #7D7D7D;
+}
+
+/* Main Content */
+main {
+    padding-top: 100px;
+}
+
 .content {
-    text-align: center;
-    padding: 100px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
 }
 
-h1 {
-    font-size: 36px;
+.column {
+    flex: 1;
+    padding: 20px;
 }
 
-p {
-    font-size: 18px;
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #FAF8F6;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
 }
