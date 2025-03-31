@@ -28,7 +28,7 @@ body {
    Header & Navigation
 ==================================================== */
 .site-header {
-  background-color: var(--color-bg);
+  background-color: #F7F4EE (--color-bg);
   padding: var(--spacing-medium) 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
