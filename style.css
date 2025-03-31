@@ -90,3 +90,17 @@ footer {
 .footer-right {
     text-align: right;
 }
+/* Responsive Design: Stack logo and menu on small screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 10px; /* Less space on mobile */
+  }
+}
+
