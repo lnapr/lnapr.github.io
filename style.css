@@ -21,9 +21,9 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: 600;
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Keeps proportions */
     position: absolute;
     left: 20px;
 }
