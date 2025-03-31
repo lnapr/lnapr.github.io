@@ -9,7 +9,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 /* Header */
 .header-container {
   display: flex;
@@ -23,12 +22,20 @@ body {
   z-index: 1000;
   align-items: center;
 }
-
+.logo {
+  display: flex;
+  flex-direction: column; /* Stack the images vertically */
+  align-items: center; /* Center the images */
+}
 .logo img {
   max-width: 130px;
   height: auto;
 }
-
+.logo-image {
+  margin-top: 10px; /* Add some space between the logo and the new image */
+  max-width: 100px; /* Adjust size as needed */
+  height: auto;
+}
 .site-nav {
   display: flex;
   gap: 20px;
@@ -36,18 +43,15 @@ body {
   align-items: center;
   flex-grow: 1;
 }
-
 .site-nav a {
   color: #191919;
   font-weight: normal;
   text-decoration: none;
   font-size: 14px;
 }
-
 .site-nav a:hover {
   color: #7D7D7D;
 }
-
 /* Main Content */
 .content {
   display: flex;
