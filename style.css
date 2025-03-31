@@ -203,3 +203,23 @@ ul {
   margin: 0;
   list-style: none;
 }
+.site-nav {
+  margin-left: auto;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 30px; /* Space between menu items */
+}
+
+.site-nav li {
+  list-style: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 18px;
+}
+
