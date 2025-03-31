@@ -29,7 +29,10 @@ body {
 
 .site-nav {
   display: flex;
-  gap: 30px;
+  gap: 20px; /* Reduced gap for menu options */
+  justify-content: center; /* Center the menu options */
+  align-items: center; /* Vertically align the menu options */
+  flex-grow: 1; /* Make sure the nav takes up all the available space */
 }
 
 .site-nav a {
