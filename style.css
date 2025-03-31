@@ -13,7 +13,7 @@ body {
 /* Header */
 .header-container {
   display: flex;
-  justify-content: space-between; /* Keeps logo on left and menu to the right */
+  justify-content: space-between; /* Keep logo left, but menu will shift to the right */
   padding: 20px 30px;
   position: fixed;
   top: 0;
@@ -32,7 +32,7 @@ body {
 .site-nav {
   display: flex;
   gap: 20px;
-  justify-content: flex-start; /* Align menu options to the left, closer to center */
+  justify-content: flex-end; /* Align the menu options further to the right */
   align-items: center;
   flex-grow: 1;
 }
