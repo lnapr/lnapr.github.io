@@ -29,7 +29,7 @@ body {
 /* Navigation menu */
 .site-nav {
   display: flex;
-  gap: 20px; /* Adjust this to control the space between menu items */
+  gap: 10px; /* Adjust this to control the space between menu items */
   margin-left: auto;
   position: absolute;
   right: 20px; /* Make sure the menu aligns to the right */
