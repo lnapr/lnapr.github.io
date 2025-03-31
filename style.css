@@ -30,11 +30,12 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Header container fix */
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 30px; /* Added padding */
+  justify-content: space-between;
+  padding: var(--spacing-medium);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -49,14 +50,14 @@ body {
   height: auto;
 }
 
-/* Navigation Menu */
+/* Navigation Menu Fix */
 .site-nav {
   margin-left: auto;
 }
 
 .site-nav ul {
   display: flex;
-  gap: 30px;
+  gap: 30px; /* Space between menu items */
 }
 
 .site-nav li {
@@ -68,11 +69,6 @@ body {
   color: var(--color-text);
   font-weight: 700;
   font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.site-nav a:hover {
-  color: #555;
 }
 
 /* =============================
