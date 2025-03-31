@@ -1,158 +1,181 @@
-/* Define CSS Variables for Consistency */
+/* ====================================================
+   CSS Variables for Consistency and Easy Tweaks
+==================================================== */
 :root {
-    --font-size-base: 16px; /* Base font size */
-    --font-size-heading: 22px; /* Heading font size */
-    --font-size-tagline: 24px; /* Tagline font size */
-    --font-size-offering: 18px; /* Offering list font size */
-    
-    --spacing-small: 10px; /* Small spacing */
-    --spacing-medium: 20px; /* Medium spacing */
-    --spacing-large: 40px; /* Large spacing */
+  --font-size-base: 16px;
+  --font-size-heading: 2.5rem;
+  --font-size-tagline: 2rem;
+  --color-text: #000;
+  --color-bg: #f7f4ee;  /* Light beige/grey background */
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 60px;
 }
 
-/* Global Styling */
+/* ====================================================
+   Global Styles
+==================================================== */
 body {
-    margin: 0;
-    font-family: 'Syne', sans-serif;
-    font-size: var(--font-size-base);
-    background-color: #fff;
-    color: black;
-    text-align: center; /* Centers all text */
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
 }
 
-/* Sections */
-main {
-  display: block;
-  text-align: center; /* Ensures content inside <main> is centered */
+/* ====================================================
+   Header & Navigation
+==================================================== */
+.site-header {
+  background-color: var(--color-bg);
+  padding: var(--spacing-medium) 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6, p, a, li {
-    font-family: 'Syne', sans-serif;
-}
-
-/* Images */
-img {
-    border-style: none;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Ensures images are centered */
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-medium);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Logo Styling */
 .logo-container {
-    max-width: 210px; /* Set the container's maximum width */
-    margin: 0 auto; /* Centers the container */
-    padding-bottom: 0; /* Remove any extra padding below the logo */
+  max-width: 200px;
+}
+.logo-container img {
+  width: 100%;
+  height: auto;
 }
 
-/* Tagline Section */
+/* Navigation Menu */
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: #555;
+}
+
+/* ====================================================
+   Hero Section
+==================================================== */
+.hero {
+  padding: var(--spacing-large) var(--spacing-medium);
+  background-color: var(--color-bg);
+  text-align: center;
+}
 .tagline {
-    font-size: var(--font-size-tagline);
-    font-weight: 700;
-    padding: var(--spacing-small) var(--spacing-small); /* Small padding */
-    margin-top: -60px; /* Increased negative margin to pull the tagline closer to the logo */
-    margin-bottom: var(--spacing-small); /* Reduce space below the tagline */
-    text-align: center; /* Ensures text in tagline is centered */
+  font-size: var(--font-size-tagline);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
 }
 
-/* Offering List Section: Prevents the "Our Offering" section from moving up */
-.offering-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
+/* ====================================================
+   Two-Column Layout
+==================================================== */
+.two-columns {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-medium);
+  margin: var(--spacing-large) auto;
+  max-width: 1200px;
+  padding: 0 var(--spacing-medium);
+}
+
+.column {
+  flex: 1;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+}
+
+/* Reverse order if needed */
+.two-columns.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive: Stack columns on small screens */
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column;
     text-align: center;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    padding-top: var(--spacing-large); /* Ensure space between tagline and "Our Offering" */
+  }
 }
 
-/* Offering List Items */
-.offering-list li {
-    font-size: var(--font-size-offering);
-    margin: var(--spacing-small) 0; /* Spacing between list items */
-}
-
-/* Footer */
+/* ====================================================
+   Footer
+==================================================== */
 .site-footer {
-    text-align: center;
-    padding: var(--spacing-small);
-    background-color: white;
-    color: black;
-    font-size: 14px;
-    margin-top: var(--spacing-large); /* More space between offerings and footer */
+  padding: var(--spacing-medium);
+  background-color: var(--color-bg);
+  font-size: 0.875rem;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+}
+.site-footer p {
+  margin: var(--spacing-small) 0;
+}
+.site-footer a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.site-footer a:hover {
+  color: #555;
 }
 
-/* Make Footer Responsive */
-@media (max-width: 768px) {
-    .site-footer {
-        font-size: 12px;
-    }
+/* ====================================================
+   Normalize CSS (minimal reset)
+==================================================== */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
-
-/* Make the tagline responsive */
-@media (max-width: 1024px) {
-    .tagline {
-        font-size: 20px; /* Smaller size for tablets */
-    }
+body {
+  margin: 0;
 }
-
-@media (max-width: 768px) {
-    .tagline {
-        font-size: 18px; /* Smaller size for small tablets and large phones */
-    }
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
-
-@media (max-width: 480px) {
-    .tagline {
-        font-size: 16px; /* Smaller size for phones */
-    }
+a {
+  background-color: transparent;
 }
-
-
-/* Content Sections */
-.content-section {
-    text-align: center;
-    padding: var(--spacing-large);
-    margin: var(--spacing-large) auto;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    max-width: 1200px;
-    margin-bottom: var(--spacing-large); /* Add space between sections */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
-
-/* Offering List */
-.offering-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }
-
-.offering-list li {
-    font-size: var(--font-size-offering);
-    margin: var(--spacing-small) 0; /* Spacing between list items */
-}
-
-/* Footer */
-.site-footer {
-    text-align: center;
-    padding: var(--spacing-small);
-    background-color: white;
-    color: black;
-    font-size: 14px;
-    margin-top: var(--spacing-large); /* More space between offerings and footer */
-}
-
-/* Make Footer Responsive */
-@media (max-width: 768px) {
-    .site-footer {
-        font-size: 12px;
-    }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
