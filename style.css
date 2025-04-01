@@ -77,11 +77,12 @@ body {
   justify-content: center; /* Centers the image horizontally */
   align-items: center; /* Centers the image vertically */
   padding-left: 10px;
+  margin-top: 20px; /* Adds space between the header and the image */
 }
 
 .left-column img {
-  width: auto;
-  max-width: 50%; /* Adjust image size by setting max-width to 50% */
+  width: 70%; /* Make the image smaller by adjusting this value */
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
   height: auto;
   object-fit: contain; /* Ensures the image doesn't stretch */
 }
