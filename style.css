@@ -64,7 +64,7 @@ body {
   top: 120px; /* Adjust to be below the header */
   left: 0;
   width: 100%;
-  height: 250px; /* Adjust the height of the image */
+  height: 400px; /* Adjust the height of the image */
   background-color: #fff;
   z-index: 500;
 }
