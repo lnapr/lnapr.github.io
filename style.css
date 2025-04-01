@@ -5,6 +5,7 @@ body {
   color: #191919;
   margin: 0;
   padding: 0;
+  
 }
 
 /* Header */
@@ -21,10 +22,9 @@ body {
 }
 
 .logo {
-  /* Position the logo fixed and keep it aligned at the top-left */
   position: fixed;
   top: 20px;
-  left: 30px;
+  left: 30px; /* You can adjust this value to center it more */
   z-index: 1001;
 }
 
@@ -33,6 +33,7 @@ body {
   height: auto;
 }
 
+/* Adjust the site-nav position for better alignment */
 .site-nav {
   display: flex;
   gap: 20px;
@@ -40,8 +41,8 @@ body {
   align-items: center;
   position: fixed;
   top: 20px;
-  left: 50%; /* Move closer to the center */
-  transform: translateX(-50%); /* To adjust the exact positioning */
+  left: 50%; /* This will center it more */
+  transform: translateX(-50%); /* Centers it exactly */
   z-index: 1000;
 }
 
