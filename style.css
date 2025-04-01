@@ -81,10 +81,10 @@ body {
 }
 
 .left-column img {
-  width: 50%; /* Make the image smaller by adjusting this value */
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  width: 100%; /* Ensure it takes the full width of its container */
+  max-width: 50%; /* Limit the image size to 50% of the container */
   height: auto;
-  object-fit: contain; /* Ensures the image doesn't stretch */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
 
 /* Right Column - Text */
