@@ -1,3 +1,7 @@
+
+/* Normalize CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 /* General Styles */
 body {
   font-family: 'Work Sans', sans-serif;
@@ -5,7 +9,6 @@ body {
   color: #191919;
   margin: 0;
   padding: 0;
-  
 }
 
 /* Header */
@@ -22,10 +25,7 @@ body {
 }
 
 .logo {
-  position: fixed;
-  top: 20px;
-  left: 30px; /* You can adjust this value to center it more */
-  z-index: 1001;
+  padding: 20px;
 }
 
 .logo img {
@@ -33,17 +33,12 @@ body {
   height: auto;
 }
 
-/* Adjust the site-nav position for better alignment */
 .site-nav {
   display: flex;
   gap: 20px;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-end;
   align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 50%; /* This will center it more */
-  transform: translateX(-50%); /* Centers it exactly */
-  z-index: 1000;
+  padding: 20px;
 }
 
 .site-nav a {
@@ -57,52 +52,68 @@ body {
   color: #7D7D7D;
 }
 
-/* Fixed image under logo (in the body) */
-.fixed-image {
+/* Fixed Section with Image on Left and Text on Right */
+.fixed-section {
+  display: flex;
   position: fixed; /* Keeps it in place when scrolling */
   top: 120px; /* Adjust to be below the header */
   left: 0;
-  width: 35%; /* Image takes up 35% of the screen width */
-  height: auto; /* Adjust the height to maintain aspect ratio */
-  z-index: 500; /* Ensure the image stays above other content but behind the menu */
+  width: 100%;
+  height: 300px; /* Adjust the height of the section */
+  background-color: #fff;
+  z-index: 500;
+  align-items: center; /* Centers the content vertically */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.fixed-image img {
-  width: 100%; /* Ensures the image fills the container */
+.left-column {
+  width: 40%; /* Adjust width of image column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column img {
+  width: 100%;
+  max-width: 250px; /* Adjust the size of the image */
   height: auto;
-  object-fit: cover; /* Ensures the image fits without stretching */
+}
+
+.right-column {
+  width: 60%; /* Adjust width of text column */
+  text-align: center;
+}
+
+.right-column h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.right-column p {
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 /* Main Content */
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 200px; /* Adjusted margin to avoid overlap with fixed header and image */
+  margin-top: 520px; /* Adjusted margin to avoid overlap with fixed header and image */
   padding: 20px;
 }
 
 .left-side {
-  width: 50%; /* Adjust the size for the image */
-}
-
-.left-side img {
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Ensure the image is well-cropped */
+  width: 45%;
 }
 
 .right-side {
   width: 45%;
-  padding-left: 30px; /* Adjust padding to make space for the text */
 }
 
-.right-side h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.right-side p {
-  font-size: 18px;
+.right-side img {
+  width: 100%;
+  height: auto;
 }
 
 /* Footer */
@@ -142,7 +153,11 @@ footer {
     width: 90%;
   }
 
-  .fixed-image {
-    height: 200px; /* Adjust image height for smaller screens */
+  .fixed-section {
+    height: 200px; /* Adjust image section height for smaller screens */
+  }
+
+  .left-column img {
+    max-width: 150px; /* Adjust image size for smaller screens */
   }
 }
