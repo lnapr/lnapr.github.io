@@ -23,6 +23,14 @@ body {
   z-index: 1000;
 }
 
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1001;
+}
+
 .logo img {
   max-width: 130px;
   height: auto;
@@ -33,7 +41,10 @@ body {
   gap: 20px;
   justify-content: flex-end;
   align-items: center;
-  flex-grow: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
 }
 
 .site-nav a {
@@ -49,7 +60,7 @@ body {
 
 /* Fixed image under logo (in the body) */
 .fixed-image {
-  position: fixed; /* Makes it stay in place as you scroll */
+  position: fixed; /* Keeps it in place when scrolling */
   top: 120px; /* Adjust to be below the header */
   left: 0;
   width: 100%;
@@ -68,7 +79,7 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 520px; /* Adjust margin to avoid overlap with fixed header and image */
+  margin-top: 520px; /* Adjusted margin to avoid overlap with fixed header and image */
   padding: 20px;
 }
 
