@@ -9,54 +9,66 @@ body {
   margin: 0;
   padding: 0;
 }
+
 /* Header */
 .header-container {
   display: flex;
-  justify-content: space-between; /* Keep logo left, but menu will shift to the right */
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 30px;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   background-color: #FAF8F6;
   z-index: 1000;
-  align-items: center;
 }
-.logo {
-  display: flex;
-  flex-direction: column; /* Stack the images vertically */
-  align-items: center; /* Center the images */
-}
+
 .logo img {
   max-width: 130px;
   height: auto;
 }
-.logo-image {
-  margin-top: 10px; /* Add some space between the logo and the new image */
-  max-width: 100px; /* Adjust size as needed */
-  height: auto;
-}
+
 .site-nav {
   display: flex;
   gap: 20px;
-  justify-content: flex-end; /* Align the menu options further to the right */
+  justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
 }
+
 .site-nav a {
   color: #191919;
   font-weight: normal;
   text-decoration: none;
   font-size: 14px;
 }
+
 .site-nav a:hover {
   color: #7D7D7D;
 }
+
+/* Fixed image under logo (in the body) */
+.fixed-image {
+  position: fixed; /* Makes it stay in place as you scroll */
+  top: 120px; /* Adjust to be below the header */
+  left: 0;
+  width: 100%;
+  height: 400px; /* Adjust the height of the image */
+  background-color: #fff;
+  z-index: 500;
+}
+
+.fixed-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image fills the container */
+}
+
 /* Main Content */
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 120px; /* Adjusted margin to avoid content overlapping with fixed header */
+  margin-top: 520px; /* Adjust margin to avoid overlap with fixed header and image */
   padding: 20px;
 }
 
@@ -108,5 +120,9 @@ footer {
 
   .left-side, .right-side {
     width: 90%;
+  }
+
+  .fixed-image {
+    height: 200px; /* Adjust image height for smaller screens */
   }
 }
