@@ -24,11 +24,7 @@ body {
 }
 
 .logo {
-  position: fixed;
-  top: 0;
-  left: 0;
   padding: 20px;
-  z-index: 1001;
 }
 
 .logo img {
@@ -41,9 +37,6 @@ body {
   gap: 20px;
   justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
   padding: 20px;
 }
 
@@ -58,22 +51,47 @@ body {
   color: #7D7D7D;
 }
 
-/* Fixed image under logo (in the body) */
-.fixed-image {
+/* Fixed Section with Image on Left and Text on Right */
+.fixed-section {
+  display: flex;
   position: fixed; /* Keeps it in place when scrolling */
   top: 120px; /* Adjust to be below the header */
   left: 0;
   width: 100%;
-  max-height: 300px; /* Set the maximum height to keep the image smaller */
+  height: 300px; /* Adjust the height of the section */
   background-color: #fff;
   z-index: 500;
-  overflow: hidden; /* Ensures no image overflow */
+  align-items: center; /* Centers the content vertically */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.fixed-image img {
+.left-column {
+  width: 40%; /* Adjust width of image column */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensures the image covers the area properly */
+  max-width: 250px; /* Adjust the size of the image */
+  height: auto;
+}
+
+.right-column {
+  width: 60%; /* Adjust width of text column */
+  text-align: center;
+}
+
+.right-column h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.right-column p {
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 /* Main Content */
@@ -134,7 +152,11 @@ footer {
     width: 90%;
   }
 
-  .fixed-image {
-    height: 200px; /* Adjust image height for smaller screens */
+  .fixed-section {
+    height: 200px; /* Adjust image section height for smaller screens */
+  }
+
+  .left-column img {
+    max-width: 150px; /* Adjust image size for smaller screens */
   }
 }
