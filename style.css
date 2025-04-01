@@ -34,15 +34,14 @@ body {
   max-width: 130px;
   height: auto;
 }
-
 .site-nav {
   display: flex;
   gap: 20px;
-  justify-content: center; /* Center menu items */
+  justify-content: flex-start; /* Align items to the left */
   align-items: center;
   position: fixed;
   top: 20px;
-  right: 30px;
+  left: 30%; /* This moves the menu closer to the center */
   z-index: 1000;
 }
 
@@ -56,7 +55,6 @@ body {
 .site-nav a:hover {
   color: #7D7D7D;
 }
-
 /* Fixed image under logo (in the body) */
 .fixed-image {
   position: fixed; /* Keeps it in place when scrolling */
