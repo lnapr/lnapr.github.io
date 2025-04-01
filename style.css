@@ -58,17 +58,17 @@ body {
 /* Fixed image under logo (in the body) */
 .fixed-image {
   position: fixed; /* Keeps it in place when scrolling */
-  top: 80px; /* Adjust to be below the header */
+  top: 120px; /* Adjust to be below the header */
   left: 0;
-  width: 50%; /* Adjust image width */
-  height: auto;
-  z-index: 500;
+  width: 35%; /* Image takes up 35% of the screen width */
+  height: auto; /* Adjust the height to maintain aspect ratio */
+  z-index: 500; /* Ensure the image stays above other content but behind the menu */
 }
 
 .fixed-image img {
-  width: 100%;
+  width: 100%; /* Ensures the image fills the container */
   height: auto;
-  object-fit: contain; /* Ensures the image does not stretch */
+  object-fit: cover; /* Ensures the image fits without stretching */
 }
 
 /* Main Content */
