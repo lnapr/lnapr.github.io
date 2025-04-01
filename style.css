@@ -14,7 +14,6 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Aligns elements towards the left */
   padding: 12px 50px;
   position: fixed;
   top: 0;
@@ -25,13 +24,13 @@ body {
 
 .logo {
   padding: 10px;
+  flex-shrink: 0; /* Prevents the logo from getting squeezed */
 }
 
 .nav-container {
-  flex-grow: 1; /* Allows menu to take up space */
+  flex-grow: 1; /* Allows the menu to take up space */
   display: flex;
-  justify-content: flex-start; /* Moves the menu closer to the logo */
-  margin-left: 100px; /* Adjust to move menu left */
+  justify-content: center; /* Centers the navigation properly */
 }
 
 .logo img {
@@ -42,9 +41,10 @@ body {
 /* Navigation Menu */
 .site-nav {
   display: flex;
-  gap: 30px; /* Space between menu items */
+  gap: 30px; /* Adjust the space between menu items */
   align-items: center;
 }
+
 .site-nav a {
   color: #191919;
   font-weight: normal;
