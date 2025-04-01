@@ -13,9 +13,8 @@ body {
 /* Header */
 .header-container {
   display: flex;
-  justify-content: space-between; /* Spreads logo and menu */
   align-items: center;
-  padding: 12px 50px; /* Increase padding for more spacing */
+  padding: 12px 50px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -25,7 +24,12 @@ body {
 
 .logo {
   padding: 10px;
-  margin-right: auto; /* Pushes site-nav further to the right */
+}
+
+.nav-container {
+  flex-grow: 1; /* Makes space between logo and menu dynamic */
+  display: flex;
+  justify-content: center; /* Moves menu toward the center */
 }
 
 .logo img {
@@ -35,8 +39,8 @@ body {
 
 /* Navigation Menu */
 .site-nav {
- display: flex;
-  gap: 40px; /* Increase spacing between menu items */
+  display: flex;
+  gap: 30px;
   align-items: center;
 }
 
