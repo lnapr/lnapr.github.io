@@ -1,6 +1,3 @@
-/* Normalize CSS */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-
 /* General Styles */
 body {
   font-family: 'Work Sans', sans-serif;
@@ -24,6 +21,7 @@ body {
 }
 
 .logo {
+  /* Position the logo fixed and keep it aligned at the top-left */
   position: fixed;
   top: 20px;
   left: 30px;
@@ -34,6 +32,7 @@ body {
   max-width: 130px;
   height: auto;
 }
+
 .site-nav {
   display: flex;
   gap: 20px;
@@ -41,7 +40,8 @@ body {
   align-items: center;
   position: fixed;
   top: 20px;
-  left: 30%; /* This moves the menu closer to the center */
+  left: 50%; /* Move closer to the center */
+  transform: translateX(-50%); /* To adjust the exact positioning */
   z-index: 1000;
 }
 
@@ -55,6 +55,7 @@ body {
 .site-nav a:hover {
   color: #7D7D7D;
 }
+
 /* Fixed image under logo (in the body) */
 .fixed-image {
   position: fixed; /* Keeps it in place when scrolling */
@@ -75,7 +76,7 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 150px; /* Adjusted margin to avoid overlap with fixed header and image */
+  margin-top: 200px; /* Adjusted margin to avoid overlap with fixed header and image */
   padding: 20px;
 }
 
