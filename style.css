@@ -14,23 +14,18 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 12px 50px;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #FAF8F6;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 .logo {
-  padding: 10px;
   flex-shrink: 0; /* Prevents the logo from getting squeezed */
-}
-
-.nav-container {
-  flex-grow: 1; /* Allows the menu to take up space */
-  display: flex;
-  justify-content: center; /* Centers the navigation properly */
 }
 
 .logo img {
@@ -39,9 +34,15 @@ body {
 }
 
 /* Navigation Menu */
+.nav-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .site-nav {
   display: flex;
-  gap: 30px; /* Adjust the space between menu items */
+  gap: 30px;
   align-items: center;
 }
 
@@ -59,23 +60,22 @@ body {
 /* Fixed Section with Image on Left and Text on Right */
 .fixed-section {
   display: flex;
-  position: fixed;
-  top: 100px;
-  left: 0;
+  position: relative;
+  margin-top: 80px; /* Starts right below the header */
   width: 100%;
   height: 280px;
   background-color: #fff;
-  z-index: 500;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
 .left-column {
   width: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 10px; /* Ensures it aligns with logo */
 }
 
 .left-column img {
@@ -141,6 +141,11 @@ footer {
     align-items: center;
   }
 
+  .nav-container {
+    width: 100%;
+    justify-content: center;
+  }
+
   .site-nav {
     flex-direction: column;
     gap: 10px;
@@ -158,7 +163,15 @@ footer {
   }
 
   .fixed-section {
-    height: 200px;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
 
   .left-column img {
