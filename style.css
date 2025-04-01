@@ -8,7 +8,6 @@ body {
   color: #191919;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Header */
@@ -25,7 +24,10 @@ body {
 }
 
 .logo {
-  padding: 20px;
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  z-index: 1001;
 }
 
 .logo img {
@@ -36,9 +38,12 @@ body {
 .site-nav {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: center; /* Center menu items */
   align-items: center;
-  padding: 20px;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 1000;
 }
 
 .site-nav a {
@@ -52,68 +57,52 @@ body {
   color: #7D7D7D;
 }
 
-/* Fixed Section with Image on Left and Text on Right */
-.fixed-section {
-  display: flex;
+/* Fixed image under logo (in the body) */
+.fixed-image {
   position: fixed; /* Keeps it in place when scrolling */
-  top: 120px; /* Adjust to be below the header */
+  top: 80px; /* Adjust to be below the header */
   left: 0;
-  width: 100%;
-  height: 300px; /* Adjust the height of the section */
-  background-color: #fff;
-  z-index: 500;
-  align-items: center; /* Centers the content vertically */
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.left-column {
-  width: 40%; /* Adjust width of image column */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-column img {
-  width: 100%;
-  max-width: 240px; /* Adjust the size of the image for a 6:8 aspect ratio */
+  width: 50%; /* Adjust image width */
   height: auto;
+  z-index: 500;
 }
 
-.right-column {
-  width: 60%; /* Adjust width of text column */
-  text-align: center;
-}
-
-.right-column h2 {
-  font-size: 36px;
-  margin: 0;
-}
-
-.right-column p {
-  font-size: 20px;
-  margin-top: 10px;
+.fixed-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image does not stretch */
 }
 
 /* Main Content */
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 520px; /* Adjusted margin to avoid overlap with fixed header and image */
+  margin-top: 150px; /* Adjusted margin to avoid overlap with fixed header and image */
   padding: 20px;
 }
 
 .left-side {
-  width: 45%;
+  width: 50%; /* Adjust the size for the image */
+}
+
+.left-side img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image is well-cropped */
 }
 
 .right-side {
   width: 45%;
+  padding-left: 30px; /* Adjust padding to make space for the text */
 }
 
-.right-side img {
-  width: 100%;
-  height: auto;
+.right-side h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.right-side p {
+  font-size: 18px;
 }
 
 /* Footer */
@@ -153,11 +142,7 @@ footer {
     width: 90%;
   }
 
-  .fixed-section {
-    height: 200px; /* Adjust image section height for smaller screens */
-  }
-
-  .left-column img {
-    max-width: 150px; /* Adjust image size for smaller screens */
+  .fixed-image {
+    height: 200px; /* Adjust image height for smaller screens */
   }
 }
