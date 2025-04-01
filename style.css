@@ -14,6 +14,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Aligns elements towards the left */
   padding: 12px 50px;
   position: fixed;
   top: 0;
@@ -27,9 +28,10 @@ body {
 }
 
 .nav-container {
-  flex-grow: 1; /* Makes space between logo and menu dynamic */
+  flex-grow: 1; /* Allows menu to take up space */
   display: flex;
-  justify-content: center; /* Moves menu toward the center */
+  justify-content: flex-start; /* Moves the menu closer to the logo */
+  margin-left: 100px; /* Adjust to move menu left */
 }
 
 .logo img {
@@ -40,10 +42,9 @@ body {
 /* Navigation Menu */
 .site-nav {
   display: flex;
-  gap: 30px;
+  gap: 30px; /* Space between menu items */
   align-items: center;
 }
-
 .site-nav a {
   color: #191919;
   font-weight: normal;
