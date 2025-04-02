@@ -81,9 +81,11 @@ body {
 }
 
 .left-column img {
-  width: 360px; /* Set exact width */
-  height: 360px; /* Set exact height */
-  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  width: 360px;
+  height: 360px;
+  max-width: 360px;
+  max-height: 360px;
+  object-fit: cover;
 }
 
 /* Right Column - Text */
