@@ -81,10 +81,9 @@ body {
 }
 
 .left-column img {
-  width: 100%; /* Ensure it takes the full width of its container */
-  max-width: 50%; /* Limit the image size to 50% of the container */
-  height: auto;
-  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+  width: 360px; /* Set exact width */
+  height: 360px; /* Set exact height */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
 }
 
 /* Right Column - Text */
