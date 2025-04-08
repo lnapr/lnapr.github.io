@@ -184,3 +184,10 @@ footer {
     max-width: 80%; /* Adjust image size for mobile */
   }
 }
+
+h3 {
+  font-size: 20px; /* Adjust this value to make it smaller or larger */
+  line-height: 1.3; /* Optional: Adjust line height for spacing */
+  margin-bottom: 15px; /* Optional: Adjust bottom margin to add spacing */
+}
+
